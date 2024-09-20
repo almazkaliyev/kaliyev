@@ -24,11 +24,10 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "hooks/*": ["./hooks/*"],
+      "styles/*": ["./styles/*"]
     },
     "incremental": true
   },

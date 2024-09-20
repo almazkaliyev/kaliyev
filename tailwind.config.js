@@ -6,16 +6,20 @@ module.exports = {
   darkMode: 'media',
   theme: {
     extend: {
-      colors: {
-        gray: {
-          100: '#fafafa',
-          900: '#262f38'
+      textColor: {
+        typo: 'var(--color-typo)',
+        hint: 'var(--color-hint)',
+        secondary: {
+          500: 'var(--color-secondary-500)',
+          600: 'var(--color-secondary-600)',
         },
-        yellow: {
-          500: '#f8806c',
-          600: '#f25f46',
-          700: '#f04e32',
-        },
+      },
+      backgroundColor: {
+        primary: 'var(--color-background)',
+      },
+      borderColor: {
+        primary: 'var(--color-typo)',
+        secondary: 'var(--color-secondary-600)',
       },
     },
   },

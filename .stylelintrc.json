@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "stylelint-config-rational-order",
+    "stylelint-prettier/recommended"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "no-descending-specificity": null,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      { "ignore": ["first-nested"] }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      { "ignore": ["first-nested"], "ignoreAtRules": ["if", "else", "import"] }
+    ],
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "/apply/", 
+        "/tailwind/",
+        "/screen/",
+        "/if/",
+        "/else/",
+        "/return/",
+        "/function/",
+	      "/debug/"
+      ]
+    }],
+    "declaration-empty-line-before": "never",
+    "order/order": [
+      ["custom-properties", "declarations", "rules", "at-rules"]
+    ],
+    "length-zero-no-unit": true,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global", "export"]
+      }
+    ]
+  }
+}

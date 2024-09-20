@@ -1,0 +1,7 @@
+html[data-theme='theme4'] {
+  --color-background: #1a2327;
+  --color-typo: #e2e8f0;
+  --color-hint: #9da8ac;
+  --color-secondary-500: #3aa76d;
+  --color-secondary-600: #339960;
+}

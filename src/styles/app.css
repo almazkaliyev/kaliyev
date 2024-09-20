@@ -1,0 +1,64 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  @import './theme1.css';
+  @import './theme2.css';
+  @import './theme3.css';
+  @import './theme4.css';
+  @import './theme5.css';
+  @import './theme6.css';
+}
+
+html {
+  height: -webkit-fill-available;
+
+  @apply bg-primary text-typo;
+}
+
+body {
+  min-height: -webkit-fill-available;
+
+  @apply h-screen;
+}
+
+.full-height {
+  min-height: -webkit-fill-available;
+
+  @apply h-screen;
+}
+
+a {
+  transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  @apply text-secondary-600 underline;
+}
+
+a:hover {
+  @apply text-secondary-500;
+}
+
+.avatar {
+  transition: border-color 250ms ease-in-out;
+}
+
+.avatar:hover {
+  animation: border-animation 2s linear infinite;
+}
+
+@keyframes border-animation {
+  0% {
+    @apply border-primary;
+  }
+
+  50% {
+    @apply border-secondary;
+  }
+
+  100% {
+    @apply border-primary;
+  }
+}

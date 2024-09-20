@@ -1,0 +1,7 @@
+html[data-theme='theme1'] {
+  --color-background: #262f38;
+  --color-typo: #fafafa;
+  --color-hint: #cfd1d3;
+  --color-secondary-500: #f8806c;
+  --color-secondary-600: #f25f46;
+}
