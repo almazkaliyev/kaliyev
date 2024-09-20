@@ -5,5 +5,12 @@ module.exports = {
   trailingSlash: true,
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.kaliyev.dev',
+        port: '',
+      },
+    ],
   },
 }
