@@ -23,14 +23,14 @@ export default function MainPage() {
         onClick={toggleTheme}
         priority
         quality={80}
-        src="/photo.jpg"
+        src="/photo.webp"
         width="180"
       />
       <h1 className="font-sans font-extrabold text-4xl mt-5">Алмаз Калиев</h1>
       <p className="mt-1 text-hint">Frontend Developer</p>
       <div className="mt-5 flex items-center gap-3">
-        <Image alt="TypeScript" height={28} quality={80} src="/ts.png" width={28} />
-        <Image alt="ReactJS" height={28} quality={80} src="/react.png" width={28} />
+        <Image alt="TypeScript" height={28} quality={80} src="/ts.webp" width={28} />
+        <Image alt="ReactJS" height={28} quality={80} src="/react.webp" width={28} />
       </div>
       <div className="flex items-center gap-3 mt-10">
         <a href="mailto:almaz@kaliyev.dev">email</a>
